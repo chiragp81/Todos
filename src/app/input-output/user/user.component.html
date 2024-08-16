@@ -1,0 +1,9 @@
+<div>
+    <h2>Parent Component</h2>
+    <p>Parent Name: <b> {{ parentName }} </b></p>
+    <p>Parent Age: <b> {{ parentDetails.age }} </b></p>
+    <button (click)="updateParentName()">Update Parent Name</button>
+    <button class="ml-2" (click)="updateParentAge()">Update Parent Age</button>
+
+    <app-user-details [ChildParentName]="parentName" [childObject]="parentDetails" />
+</div>
